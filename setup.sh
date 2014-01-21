@@ -19,3 +19,4 @@ cd ~/cgminer/
 make
 mv ~/cgminer/cgminer.conf ~/cgminer/cgminer.conf_$_now.bak
 cp /tmp/setup_cgminer/cgminer.conf ~/cgminer/cgminer.conf
+screen -dmS cgminer ~/cgminer/cgminer --config ~/cgminer/cgminer.conf
