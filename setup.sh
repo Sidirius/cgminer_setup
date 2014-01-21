@@ -1,7 +1,7 @@
 #!/bin/bash
 _now=$(date +"%Y-%m-%d_%H.%M.%S")
 apt-get update
-apt-get install screen libtool pkg-config libncurses-dev libjansson-dev libusb-1.0-0-dev libusb-1.0-0-dev libusb-1.0-0 libcurl4-openssl-dev libncurses5-dev libudev-dev
+apt-get install -y screen libtool pkg-config libncurses-dev libjansson-dev libusb-1.0-0-dev libusb-1.0-0-dev libusb-1.0-0 libcurl4-openssl-dev libncurses5-dev libudev-dev
 mkdir /tmp/setup_cgminer/
 mv * /tmp/setup_cgminer/
 cd ..
