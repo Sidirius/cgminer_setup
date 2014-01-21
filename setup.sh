@@ -4,6 +4,8 @@ apt-get update
 apt-get install screen install libtool pkg-config libncurses-dev libjansson-dev libusb-1.0-0-dev libusb-1.0-0-dev libusb-1.0-0 libcurl4-openssl-dev libncurses5-dev libudev-dev
 mkdir /tmp/setup_cgminer/
 mv * /tmp/setup_cgminer/
+cd ..
+rm -rf cgminer_setup/
 chmod 755 /tmp/setup_cgminer/create_cgminer_cron.sh
 /tmp/setup_cgminer/create_cgminer_cron.sh
 cd ~
