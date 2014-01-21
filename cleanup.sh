@@ -1,2 +1,3 @@
 #!/bin/bash
-rm -rf /home/pi/setup_raspi01
+rm -rf ~/cgminer/cgminer.conf_*.bak
+rm -rf ~/cgminer_setup/
