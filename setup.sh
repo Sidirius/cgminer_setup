@@ -11,6 +11,7 @@ chmod 755 /tmp/setup_cgminer/create_cgminer_cron.sh
 cd ~
 wget http://ck.kolivas.org/apps/cgminer/3.6/cgminer-3.6.6.tar.bz2
 tar xvf cgminer-3.6.6.tar.bz2
+rm -rf cgminer/
 mv cgminer-3.6.6/ cgminer/
 rm -rf cgminer-3.6.6.tar.bz2
 ~/cgminer/configure --enable-icarus
