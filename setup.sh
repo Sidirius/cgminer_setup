@@ -13,7 +13,7 @@ wget http://ck.kolivas.org/apps/cgminer/3.6/cgminer-3.6.6.tar.bz2
 tar xvf cgminer-3.6.6.tar.bz2
 mv cgminer-3.6.6/ cgminer/
 rm -rf cgminer-3.6.6.tar.bz2
-cd ~/cgminer/configure --enable-icarus
+~/cgminer/configure --enable-icarus
 make
 mv ~/cgminer/cgminer.conf ~/cgminer/cgminer.conf_$_now.bak
 cp /tmp/setup_cgminer/cgminer.conf ~/cgminer/cgminer.conf
