@@ -1,7 +1,7 @@
 #!/bin/bash
 _now=$(date +"%Y-%m-%d_%H.%M.%S")
 apt-get update
-apt-get install -y screen libtool pkg-config libncurses-dev libjansson-dev libusb-1.0-0-dev libusb-1.0-0-dev libusb-1.0-0 libcurl4-openssl-dev libncurses5-dev libudev-dev
+apt-get install -y screen libtool pkg-config libncurses-dev libjansson-dev libusb-1.0-0-dev libusb-1.0-0-dev libusb-1.0-0 libcurl4-openssl-dev libncurses5-dev libudev-dev apache2 php5
 mkdir /tmp/setup_cgminer/
 mv * /tmp/setup_cgminer/
 cd ..
@@ -20,3 +20,5 @@ make
 mv ~/cgminer/cgminer.conf ~/cgminer/cgminer.conf_$_now.bak
 cp /tmp/setup_cgminer/cgminer.conf ~/cgminer/cgminer.conf
 screen -dmS cgminer ~/cgminer/cgminer --config ~/cgminer/cgminer.conf
+mkdir /var/www/mining/
+cp ~/cgminer/miner.php /var/www/mining/index.php
