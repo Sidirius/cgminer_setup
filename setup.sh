@@ -14,7 +14,8 @@ tar xvf cgminer-3.6.6.tar.bz2
 rm -rf cgminer/
 mv cgminer-3.6.6/ cgminer/
 rm -rf cgminer-3.6.6.tar.bz2
-~/cgminer/configure --enable-icarus
+cd ~/cgminer/
+./configure --enable-icarus
 make
 mv ~/cgminer/cgminer.conf ~/cgminer/cgminer.conf_$_now.bak
 cp /tmp/setup_cgminer/cgminer.conf ~/cgminer/cgminer.conf
